@@ -1,0 +1,40 @@
+==============================
+v0.1.0
+==============================
+Basic functionality....doesn't work too well but can perform webservice calls statically set in a text file
+
+==============================
+v0.2.0
+==============================
+Broken Version - See 0.2.1 for actual update
+
+Version published prematurely in order to get a message to the 60 current installations that they
+	should not be expecting much yet.
+
+==============================
+v0.2.1
+==============================
+New Configuration page....user can now set webservice location as well as credentials
+	-stored in text file
+	
+==============================
+v0.3
+==============================
+MASSIVE changes made in this release
+
+Added the ability to go into a device's properties and view stuff like MAC address, IP, and status, alongside 
+	buttons to allow a remote shutdown, reboot, or wakeup of the system. Wakeup is not enabled in this version, but
+	is almost done, so will be included in the next version.
+
+Cleaned up the main list so that the buttons extend to the right
+
+Cleaned up error handling, and logging.
+
+Created a "Device" object for easy manipulation of data within lists.
+
+Added a new WS client to interact with the remote telnet class
+
+==============================
+v0.3.1
+==============================
+Took a password out of one of the layouts.....oops!

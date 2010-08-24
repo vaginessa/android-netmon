@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mierdin.NetworkMonitor"
+      android:screenOrientation="portrait" android:versionCode="6" android:versionName="0.4.0">
+      <uses-sdk android:minSdkVersion="7" 
+      			android:maxSdkVersion="8"
+      			android:targetSdkVersion="7"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".splash"
+				  android:label="Network Monitor"
+				  android:screenOrientation="portrait">
+	         <intent-filter>
+	         <action android:name="android.intent.action.MAIN" />
+	         <category android:name="android.intent.category.LAUNCHER" />
+	         </intent-filter>
+	     </activity>
+        <activity android:name=".subActivityWithResults"  
+	     			android:screenOrientation="portrait"
+	     			 android:label="Network Monitor">
+	     </activity>
+	     <activity android:name=".main"  
+	     			android:screenOrientation="portrait"
+	     			 android:label="Network Monitor">
+	     </activity>
+	     <activity android:name=".configmaker"       
+	     			 android:label="Network Monitor">
+	     </activity>
+	     <activity android:name=".configmaker_list"       
+	     			 android:label="Network Monitor Configuration">
+	     </activity>
+	     <activity android:name=".actDeviceOptions"  
+	     			android:screenOrientation="portrait"
+	     			 android:label="Network Monitor">
+	     </activity>
+	     <service android:name="com.mierdin.NetworkMonitor.Classes.BackgroundService"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+</manifest> 
